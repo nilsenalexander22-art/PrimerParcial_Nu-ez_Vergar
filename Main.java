@@ -6,7 +6,7 @@ public class Main{
   System.out.print("Ingrese la Ubicacion: ");
     String ubicacion = sc.nextLine();
 
-  System.out.print("Ingrese la temperatura inicial: ")
+  System.out.print("Ingrese la temperatura inicial: ");
     double inicial = sc.nextDouble();
 
   Termometro t = new Termometro(ubicacion, inicial);
@@ -19,7 +19,7 @@ public class Main{
 
     System.out.println("Temperatura actual: " + t.getTemperaturaActual());
 
-    System.out.println("Temperatura Fahrenheit: " + termometro.convertirAFahrenheit() + "ºF");
+    System.out.println("Temperatura Fahrenheit: " + t.convertirAFahrenheit() + "ºF");
 
     System.out.println("Alerta de calor: " + t.hayAlertaDeCalor());
 
