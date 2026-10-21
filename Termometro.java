@@ -26,4 +26,8 @@ public class Termometro {
     public double getTemperaturaActual() {
         return temperaturaActual;
     }
+
+    public double convertirAFahrenheit() {
+        return (temperaturaActual * 9 / 5) + 32;
+    }
 }
